@@ -17,7 +17,8 @@ namespace Herencia
             Console.WriteLine("****Datos del Vehiculo****");
             Console.WriteLine($"Marca: {Marca}");
             Console.WriteLine($"Modelo: {Modelo}");
-            Console.WriteLine();
+            Console.WriteLine($"Año: {Año}");
+            
         }
 
     }

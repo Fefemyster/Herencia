@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Herencia
 {
@@ -13,17 +18,21 @@ namespace Herencia
 
         public override void MostrarInformacion()
         {
-
-            if (TieneMaletero = true)
+            base.MostrarInformacion();
+            Console.WriteLine($"Cilindrada: {Cilindrada} CC");
+            Console.WriteLine($"¿Tiene maletero?");
+           
+            if (TieneMaletero)
             {
-                Console.WriteLine("La moto tiene maletero");
+                Console.WriteLine("Si");
             }
-            else {
-                Console.WriteLine("No tiene Maletero");
+            else
+            {
+                Console.WriteLine("No");
             }
-            
+            Console.WriteLine();
 
-            
+
         }
 
 

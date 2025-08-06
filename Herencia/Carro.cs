@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    public class Carro1 : Vehiculo
+    public class Carro : Vehiculo
     {
         public int NumeroPuertas { get; set; }
-        public string Nombre { get; set; }
+        public string TipoCombustible { get; set; }
 
 
         public override void MostrarInformacion()
         {
-            Console.WriteLine("****Datos del Vehiculo****");
+            base.MostrarInformacion();
             Console.WriteLine($"Numero de Puertas: {NumeroPuertas}");
-            Console.WriteLine($"Nombre: {Nombre}");
+            Console.WriteLine($"Tipo de Combustible: {TipoCombustible}");
             Console.WriteLine();
         }
 
